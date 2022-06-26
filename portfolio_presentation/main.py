@@ -49,7 +49,7 @@ def choose_my_products(my_product_codes, all_product_codes):
 
 
 def data_extraction(my_product_paths, skiprows=3, mapping=class_mapping, notna_cols=["单位成本", "科目名称"],
-                    needed_cols=["科目名称", "资产类型", "数    量", "单位成本", "市价", "市值", "估值增值"]):
+                    needed_cols=["科目名称", "资产类型", "父节点名称", "数    量", "单位成本", "市价", "市值", "估值增值"]):
     """
     针对第一步选择的表格路径提取信息，整理为《持仓表》
 
